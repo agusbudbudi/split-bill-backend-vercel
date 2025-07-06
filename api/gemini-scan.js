@@ -1,5 +1,5 @@
 import Cors from "cors";
-import initMiddleware from "../../lib/init-middleware";
+import initMiddleware from "../lib/init-middleware";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const cors = initMiddleware(
