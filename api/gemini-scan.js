@@ -12,6 +12,8 @@ const cors = initMiddleware(
 export default async function handler(req, res) {
   await cors(req, res); // Apply CORS
 
+  console.log("Gemini Key:", process.env.GEMINI_API_KEY); // ✅ Tambahkan di sini
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
