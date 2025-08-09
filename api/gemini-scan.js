@@ -1,6 +1,10 @@
 export default async function handler(req, res) {
   // ✅ Tambahkan headers untuk CORS
   res.setHeader("Access-Control-Allow-Origin", "https://agusbudbudi.github.io");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://splitbill-alpha.vercel.app"
+  );
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
